@@ -3,63 +3,160 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Advocacia Aurora</title>
+  <title>Áreas de Atuação - Advocacia Aurora</title>
   <link rel="icon" href="images/favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="./logo.png" alt="logo">
-      <h1>Escritorio de Advocacia Aurora</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="about.html">Quem Somos</a></li>
-        <li><a href="services.html">Áreas</a></li>
-        <li><a href="gallery.html">Galeria</a></li>
-        <li><a href="contact.html">Contato</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0e2a47; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+      <span style="font-size: 1.2rem; font-weight: bold; color: #fff;">Escritorio de Advocacia Aurora</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Áreas</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
+</nav>
+
+<header class="bg-dark text-white text-center py-5" style="background-image: url('images/banner-servicos.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-4" style="background-color: rgba(0,0,0,0.6);">
+        <h1 class="display-4 fw-bold">Áreas de Atuação</h1>
+        <p class="lead">Soluções jurídicas personalizadas para você e sua empresa.</p>
+    </div>
 </header>
 
-<main class="container">
-  <h2>Áreas de Atuação</h2>
-  <p>Prestamos serviços jurídicos em várias áreas para atender empresas e pessoas físicas.</p>
-  <p>Cada área possui equipe dedicada e planos de atendimento personalizado.</p>
-  <p>Buscamos entender o negócio dos clientes para oferecer soluções práticas.</p>
-  <p>Realizamos consultorias, defesas judiciais e acordos extrajudiciais.</p>
+<main class="container my-5">
+  <div class="row">
+    <div class="col-lg-12 mb-4">
+      <h2>Nossa Abordagem</h2>
+      <p>Prestamos serviços jurídicos em várias áreas para atender empresas e pessoas físicas.</p>
+      <p>Cada área possui equipe dedicada e planos de atendimento personalizado.</p>
+      <p>Buscamos entender o negócio dos clientes para oferecer soluções práticas.</p>
+      <p>Realizamos consultorias, defesas judiciais e acordos extrajudiciais.</p>
+    </div>
 
-  <h3>Listas de Serviços</h3>
-  <ol class="styled-list">
-    <li>Contratos e negociações</li>
-    <li>Direito do trabalho</li>
-    <li>Reestruturação societária</li>
-    <li>Planejamento tributário</li>
-    <li>Contencioso estratégico</li>
-  </ol>
+    <div class="col-lg-12 mb-5">
+      <h3>Lista de Serviços</h3>
+      <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fas fa-file-signature me-2"></i>Contratos</h5>
+                    <p class="card-text">Contratos e negociações.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fas fa-briefcase me-2"></i>Trabalhista</h5>
+                    <p class="card-text">Direito do trabalho.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fas fa-handshake me-2"></i>Societário</h5>
+                    <p class="card-text">Reestruturação societária.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fas fa-chart-line me-2"></i>Tributário</h5>
+                    <p class="card-text">Planejamento tributário.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"><i class="fas fa-gavel me-2"></i>Contencioso</h5>
+                    <p class="card-text">Contencioso estratégico.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
-  <h3>Documentos e Procedimentos</h3>
-  <ul class="styled-list">
-    <li>Elaboração de contratos</li>
-    <li>Assessoria em assembleias</li>
-    <li>Defesa em ações trabalhistas</li>
-  </ul>
+    <div class="col-lg-6 mb-4">
+      <h3>Documentos e Procedimentos</h3>
+      <div class="accordion" id="accordionDocs">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocs">
+              Ver Detalhes dos Procedimentos
+            </button>
+          </h2>
+          <div id="collapseDocs" class="accordion-collapse collapse show" data-bs-parent="#accordionDocs">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Elaboração de contratos</li>
+                <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Assessoria em assembleias</li>
+                <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Defesa em ações trabalhistas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <img src="./Sala_Reuniao_Escritorio_Advocacia.jpg" alt="documentos" class="responsive">
-  <p class="caption">Sala de reunião e escritório.</p>
+    <div class="col-lg-6 mb-4">
+      <div class="card border-0">
+          <img src="./Sala_Reuniao_Escritorio_Advocacia.jpg" alt="documentos" class="img-fluid rounded shadow responsive">
+          <div class="card-footer bg-white border-0 text-muted">
+              <p class="caption mb-0 text-center">Sala de reunião e escritório.</p>
+          </div>
+      </div>
+    </div>
+
+  </div>
 </main>
 
-<footer>
-  <div class="foot-inner">
+<footer class="bg-light mt-5 py-4 border-top">
+  <div class="foot-inner container text-center">
+    <div class="social-icons mb-3">
+         <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+         </a>
+         
+         <a href="https://www.instagram.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+         </a>
+         
+         <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwifiLWry7ORAxVvYUgAHcRaLtcYACICCAEQABoCY2U&ae=2&co=1&ase=2&gclid=CjwKCAiA0eTJBhBaEiwA-Pa-hVUUQPbvrnDzc8iC4rlr1gF8dgEbHNYPNb6M9b9V6tGX63XMf6T0hBoCSSUQAvD_BwE&cid=CAASZeRonDlsYtk3SKteCDujK3riXdbWOBKDeaaz6U5sr07f2fcLpzB9LcZXtwc7y5c9_mild7cxZNqt5yFJ3r4CJ4Q_z9Gl3IGk4gl07juPMpnTDOz1xAniI_ScerZCcKejrr7f2zSp&cce=2&category=acrcp_v1_71&sig=AOD64_2joWicf7j26qVkP8yoi288HNXHyQ&q&nis=4&adurl&ved=2ahUKEwjIha6ry7ORAxX8BbkGHdnMC-UQ0Qx6BAgNEAE" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-linkedin fa-lg"></i>
+         </a>
+         
+         <a href="https://web.whatsapp.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-whatsapp fa-lg"></i>
+         </a>
+    </div>
     <div>
-      <p>&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
+      <p class="mb-0 text-dark" style="color: #333;">&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-

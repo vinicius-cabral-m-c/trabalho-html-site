@@ -3,71 +3,187 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Advocacia Aurora</title>
+  <title>Contato - Advocacia Aurora</title>
   <link rel="icon" href="images/favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="./logo.png" alt="logo">
-      <h1>Escritorio de Advocacia Aurora</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="about.html">Quem Somos</a></li>
-        <li><a href="services.html">Áreas</a></li>
-        <li><a href="gallery.html">Galeria</a></li>
-        <li><a href="contact.html">Contato</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0e2a47; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+      <span style="font-size: 1.2rem; font-weight: bold; color: #fff;">Escritorio de Advocacia Aurora</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Áreas</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contato</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
+</nav>
+
+<header class="bg-dark text-white text-center py-5" style="background-image: url('images/banner-contato.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-4" style="background-color: rgba(0,0,0,0.6);">
+        <h1 class="display-4 fw-bold">Entre em Contato</h1>
+        <p class="lead">Estamos te esperando para nós chamar. </p>
+    </div>
 </header>
 
-<main class="container">
-  <h2>Formulário de Contato:</h2>
+<main class="container my-5">
+  <div class="row">
+    
+    <div class="col-lg-7 mb-4">
+      <h2 class="mb-4">Formulário de Contato</h2>
+      <form action="#" method="post" class="p-4 border rounded shadow-sm bg-light">
+        
+        <h4 class="mb-3 text-primary border-bottom pb-2">Dados Pessoais</h4>
+        
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
 
-  <form action="#" method="post">
-    <fieldset>
-      <legend>Dados Pessoais</legend>
-      <label>Nome completo<input type="text" name="nome" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Senha<input type="password" name="senha"></label>
-      <label>Telefone<input type="text" name="telefone"></label>
-      <label>Data de nascimento<input type="text" name="nascimento" placeholder="DD/MM/AAAA"></label>
-    </fieldset>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha">
+            </div>
+        </div>
 
-    <fieldset>
-      <legend>Informações Adicionais</legend>
-      <label>Profissão<input type="text" name="profissao"></label>
-      <label>Empresa<input type="text" name="empresa"></label>
-      <label>CPF<input type="text" name="cpf"></label>
-      <label>RG<input type="text" name="rg"></label>
-      <label>Possui processos? 
-        <input type="radio" name="processos" value="sim"> Sim
-        <input type="radio" name="processos" value="nao"> Não
-      </label>
-      <label>Assuntos de interesse</label>
-      <label><input type="checkbox" name="area1"> Direito Civil</label>
-      <label><input type="checkbox" name="area2"> Direito Trabalhista</label>
-      <label><input type="checkbox" name="area3"> Direito Empresarial</label>
-      <label>Mensagem<textarea name="mensagem"></textarea></label>
-    </fieldset>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" name="telefone">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="nascimento" class="form-label">Data de nascimento</label>
+                <input type="date" class="form-control" id="nascimento" name="nascimento">
+            </div>
+        </div>
 
-    <input type="submit" value="Enviar">
-  </form>
+        <h4 class="mb-3 mt-4 text-primary border-bottom pb-2">Informações Adicionais</h4>
 
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="profissao" class="form-label">Profissão</label>
+                <input type="text" class="form-control" id="profissao" name="profissao">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="empresa" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="empresa" name="empresa">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="rg" class="form-label">RG</label>
+                <input type="text" class="form-control" id="rg" name="rg">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Possui processos?</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="processos" id="processosSim" value="sim">
+                <label class="form-check-label" for="processosSim">Sim</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="processos" id="processosNao" value="nao">
+                <label class="form-check-label" for="processosNao">Não</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Assuntos de interesse</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="area1" id="area1">
+                <label class="form-check-label" for="area1">Direito Civil</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="area2" id="area2">
+                <label class="form-check-label" for="area2">Direito Trabalhista</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="area3" id="area3">
+                <label class="form-check-label" for="area3">Direito Empresarial</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Enviar Formulário</button>
+      </form>
+    </div>
+
+    <div class="col-lg-5">
+      <h2 class="mb-4">Nossa Localização</h2>
+      <div class="p-4 bg-white border rounded shadow-sm h-100">
+          <p><strong><i class="fas fa-map-marker-alt me-2"></i>Endereço:</strong><br>Praça dos Três Poderes, Brasília - DF</p>
+          <p><strong><i class="fas fa-envelope me-2"></i>Email:</strong><br> contato@advocaciaaurora.com.br</p>
+          <p><strong><i class="fas fa-phone me-2"></i>Telefone:</strong><br> (61) 9999-0000</p>
+          
+          <hr class="my-4">
+          
+          <h4 class="mb-3">Como chegar:</h4>
+          <div class="ratio ratio-1x1 border rounded">
+              <div class="ratio ratio-1x1 border rounded">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.2223849603363!2d-47.86693968532448!3d-15.797457989049283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ae6475f80b5%3A0x7d77b10228308c0!2sCongresso%20Nacional!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+          </div>
+      </div>
+    </div>
+
+  </div>
 </main>
 
-<footer>
-  <div class="foot-inner">
+<footer class="bg-light mt-5 py-4 border-top">
+  <div class="foot-inner container text-center">
+    <div class="social-icons mb-3">
+         <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+         </a>
+         
+         <a href="https://www.instagram.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+         </a>
+         
+         <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwifiLWry7ORAxVvYUgAHcRaLtcYACICCAEQABoCY2U&ae=2&co=1&ase=2&gclid=CjwKCAiA0eTJBhBaEiwA-Pa-hVUUQPbvrnDzc8iC4rlr1gF8dgEbHNYPNb6M9b9V6tGX63XMf6T0hBoCSSUQAvD_BwE&cid=CAASZeRonDlsYtk3SKteCDujK3riXdbWOBKDeaaz6U5sr07f2fcLpzB9LcZXtwc7y5c9_mild7cxZNqt5yFJ3r4CJ4Q_z9Gl3IGk4gl07juPMpnTDOz1xAniI_ScerZCcKejrr7f2zSp&cce=2&category=acrcp_v1_71&sig=AOD64_2joWicf7j26qVkP8yoi288HNXHyQ&q&nis=4&adurl&ved=2ahUKEwjIha6ry7ORAxX8BbkGHdnMC-UQ0Qx6BAgNEAE" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-linkedin fa-lg"></i>
+         </a>
+         
+         <a href="https://web.whatsapp.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-whatsapp fa-lg"></i>
+         </a>
+    </div>
     <div>
-      <p>&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
+      <p class="mb-0 text-dark" style="color: #333;">&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-

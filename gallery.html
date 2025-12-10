@@ -3,64 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Advocacia Aurora</title>
+  <title>Galeria - Advocacia Aurora</title>
   <link rel="icon" href="images/favicon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      <img src="./logo.png" alt="logo">
-      <h1>Escritorio de Advocacia Aurora</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="about.html">Quem Somos</a></li>
-        <li><a href="services.html">Áreas</a></li>
-        <li><a href="gallery.html">Galeria</a></li>
-        <li><a href="contact.html">Contato</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0e2a47; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+      <span style="font-size: 1.2rem; font-weight: bold; color: #fff;">Escritorio de Advocacia Aurora</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Áreas</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
       </ul>
-    </nav>
+    </div>
   </div>
+</nav>
+
+<header class="bg-dark text-white text-center py-5" style="background-image: url('images/banner-galeria.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-4" style="background-color: rgba(0,0,0,0.6);">
+        <h1 class="display-4 fw-bold">Galeria</h1>
+        <p class="lead">Conheça nossa estrutura e dia a dia.</p>
+    </div>
 </header>
 
-<main class="container">
-  <h2>Galeria</h2>
-  <p>Imagens do escritório, eventos e material de apoio.</p>
-
-  <div class="gallery-grid">
-    <figure>
-      <img src="./Advogados_Com_Icones_Juridicos.jpg" alt="equipe" class="responsive">
-      <figcaption class="caption">Equipe do escritório.</figcaption>
-    </figure>
-    <figure>
-      <img src="./imagem de negocios.png" alt="palestra" class="responsive">
-      <figcaption class="caption">Conversa entre cliente e nosso advogado.</figcaption>
-    </figure>
-    <figure>
-      <img src="./Sala_Reuniao_Escritorio_Advocacia.jpg" alt="escritorio2" class="responsive">
-      <figcaption class="caption">Área de atendimento ao cliente.</figcaption>
-    </figure>
+<main class="container my-5">
+  <div class="text-center mb-5">
+    <h2>Galeria</h2>
+    <p class="lead">Imagens do escritório, eventos e material de apoio.</p>
   </div>
 
+  <div class="row g-4 mb-4">
+    <div class="col-md-4">
+      <figure class="figure w-100">
+        <img src="./Advogados_Com_Icones_Juridicos.jpg" class="figure-img img-fluid rounded shadow img-thumbnail" alt="equipe">
+        <figcaption class="figure-caption text-center">Equipe do escritório.</figcaption>
+      </figure>
+    </div>
+    
+    <div class="col-md-4">
+      <figure class="figure w-100">
+        <img src="./imagem de negocios.png" class="figure-img img-fluid rounded shadow img-thumbnail" alt="palestra">
+        <figcaption class="figure-caption text-center">Conversa entre cliente e nosso advogado.</figcaption>
+      </figure>
+    </div>
 
-  
-  <div class="gallery-grid" style="margin-top:12px;">
-    <img src="./Recepcao_Escritorio_Advocacia.jpg" class="responsive" alt="foto extra">
-    <img src="./Professional_Lawyers_Office.jpg" class="responsive" alt="foto extra2">
+    <div class="col-md-4">
+      <figure class="figure w-100">
+        <img src="./Sala_Reuniao_Escritorio_Advocacia.jpg" class="figure-img img-fluid rounded shadow img-thumbnail" alt="escritorio2">
+        <figcaption class="figure-caption text-center">Área de atendimento ao cliente.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card border-0">
+        <img src="./Recepcao_Escritorio_Advocacia.jpg" class="img-fluid rounded shadow" alt="foto extra">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card border-0">
+        <img src="./Professional_Lawyers_Office.jpg" class="img-fluid rounded shadow" alt="foto extra2">
+      </div>
+    </div>
   </div>
 
 </main>
 
-<footer>
-  <div class="foot-inner">
+<footer class="bg-light mt-5 py-4 border-top">
+  <div class="foot-inner container text-center">
+    <div class="social-icons mb-3">
+         <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-facebook fa-lg"></i>
+         </a>
+         
+         <a href="https://www.instagram.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-instagram fa-lg"></i>
+         </a>
+         
+         <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwifiLWry7ORAxVvYUgAHcRaLtcYACICCAEQABoCY2U&ae=2&co=1&ase=2&gclid=CjwKCAiA0eTJBhBaEiwA-Pa-hVUUQPbvrnDzc8iC4rlr1gF8dgEbHNYPNb6M9b9V6tGX63XMf6T0hBoCSSUQAvD_BwE&cid=CAASZeRonDlsYtk3SKteCDujK3riXdbWOBKDeaaz6U5sr07f2fcLpzB9LcZXtwc7y5c9_mild7cxZNqt5yFJ3r4CJ4Q_z9Gl3IGk4gl07juPMpnTDOz1xAniI_ScerZCcKejrr7f2zSp&cce=2&category=acrcp_v1_71&sig=AOD64_2joWicf7j26qVkP8yoi288HNXHyQ&q&nis=4&adurl&ved=2ahUKEwjIha6ry7ORAxX8BbkGHdnMC-UQ0Qx6BAgNEAE" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-linkedin fa-lg"></i>
+         </a>
+         
+         <a href="https://web.whatsapp.com/" target="_blank" class="text-dark mx-2">
+            <i class="fab fa-whatsapp fa-lg"></i>
+         </a>
+    </div>
     <div>
-      <p>&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
+      <p class="mb-0 text-dark" style="color: #333;">&copy; 2025 Advocacia Aurora — Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
